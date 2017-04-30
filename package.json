@@ -1,0 +1,42 @@
+{
+  "name": "csscomb-config-dup",
+  "version": "1.0.0",
+  "description": "My CSScomb config as a module",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tiaanduplessis/csscomb-config-dup.git"
+  },
+  "homepage": "https://github.com/tiaanduplessis/csscomb-config-dup",
+  "bugs": "https://github.com/tiaanduplessis/csscomb-config-dup/issues",
+  "author": {
+    "name": "Tiaan",
+    "email": "tiaanduplessis@hotmail.com",
+    "url": "tiaan.beer"
+  },
+  "bin": {
+    "csscomb-config-dup": "cli.js"
+  },
+  "scripts": {
+    "start": "npm run dev",
+    "pretest": "npm run lint:fix",
+    "test": "jest --env=node",
+    "test:watch": "npm test -- --watch",
+    "coverage": "npm test -- --coverage",
+    "lint": "standard --verbose",
+    "lint:fix": "standard --fix --verbose",
+    "precommit": "npm test"
+  },
+  "keywords": [
+    "csscomb",
+    "config",
+    "csscomb-config-dup"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "husky": "^0.13.3",
+    "jest": "^19.0.2",
+    "standard": "^10.0.1"
+  }
+}
